@@ -5,5 +5,7 @@ const controller = require('../Controllers/gamesController')
 const cors = require('cors')
 
 router.put("/games/:id", cors(), controller.atualizar)
+router.put("/games/:id", cors(), controller.update)
+
 
 module.exports = router
